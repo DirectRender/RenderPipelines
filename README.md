@@ -35,3 +35,10 @@
 - DirectX requires the use of specialized hardware, such as graphics cards, which can be expensive.
 - DirectX is only available on Windows, limiting its use in cross-platform development.
 - DirectX may not be supported by older hardware, and may not be compatible with certain software.
+
+
+
+
+# What is a ``Shader``?
+- A shader is a program that is used to tell the graphics card how to display a certain object or scene. Shaders are responsible for the color, texture, and lighting of a 3D object or scene. They are written in a shading language such as Cg (C for graphics) or HLSL (High Level Shading Language) and are usually processed by the GPU.
+- Shaders are run often on the GPU because they are designed to take advantage of the parallel processing capabilities of the GPU. Shaders can be used to perform a variety of tasks, including transforming and lighting 3D models, calculating reflections, generating shadows, and creating special effects. Some examples of shaders include vertex shaders, pixel shaders, geometry shaders, and compute shaders.
