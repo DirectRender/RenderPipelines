@@ -40,9 +40,23 @@
 
 
 # What is a ``Shader``?
-- A shader is a program that is used to tell the graphics card how to display a certain object or scene. Shaders are responsible for the color, texture, and lighting of a 3D object or scene. They are written in a shading language such as Cg (C for graphics) or HLSL (High Level Shading Language) and are usually processed by the GPU.
+- Shaders is a program that is used to tell the graphics card how to display a certain object or scene. Shaders are responsible for the color, texture, and lighting of a 3D object or scene. They are written in a shading language such as Cg (C for graphics) or HLSL (High Level Shading Language) and are usually processed by the GPU.
 - Shaders are run often on the GPU because they are designed to take advantage of the parallel processing capabilities of the GPU. Shaders can be used to perform a variety of tasks, including transforming and lighting 3D models, calculating reflections, generating shadows, and creating special effects. Some examples of shaders include vertex shaders, pixel shaders, geometry shaders, and compute shaders.
 
 # What is a ``Vertex Buffer``?
 - Vertex buffers are data structures used to store information about the vertices of a 3D model. A vertex buffer stores information like the position, color, and normal vector of each vertex in the model. This information is used by the graphics processing unit (GPU) to render the 3D model on the screen.
 - Vertex buffer objects are used to store large collections of vertices on the graphics card for rendering. This allows the data to be quickly accessed by the GPU, which reduces the amount of time it takes to render a scene. Vertex buffer objects also reduce the amount of data that needs to be sent from the CPU to the GPU, which can improve performance in complex scenes.
+
+# What is a ``Index Buffer``?
+- Index buffers store the index data for a mesh, which specifies the order in which the vertices should be drawn. This can be used to reduce the amount of redundant vertex data and improve rendering performance.
+- For example, consider a cube with eight vertices. If you were to draw the cube using a vertex buffer, you would need to specify all eight vertices in the buffer and then draw the cube by drawing two triangles for each face of the cube, for a total of 24 vertices. However, if you were to use an index buffer, you could specify just eight vertices in the vertex buffer and then use the index buffer to specify the order in which those vertices should be drawn, reducing the total number of vertices that need to be drawn.
+
+# What is a ``Texture Buffer``?
+- A texture buffer is a type of buffer in OpenGL that stores texture data. This data is typically stored in an image format, such as PNG or JPEG, and is used to add details and texture to a 3D model.
+
+# What is a ``Uniform Buffer``?
+- Uniform buffer is a type of buffer in OpenGL that stores uniform data. Uniform data is constant data that is the same for all vertices or fragments in a given draw call. This data is typically used to store transformations, lighting information, or other global data that needs to be shared across all the vertices or fragments in a scene
+
+# What is a ``Shader Storage Buffer``?
+- A shader storage buffer is a type of buffer in OpenGL that stores data that can be read and written by shaders. This allows shaders to interact with the graphics pipeline in more complex ways and perform more advanced computations on the GPU
+- Shader storage buffers are useful for a variety of applications, such as creating complex particle systems, implementing GPGPU algorithms, or performing physics simulations. They allow you to store and manipulate data on the GPU using shaders, which can be much faster and more efficient than transferring data back and forth between the CPU and GPU.
