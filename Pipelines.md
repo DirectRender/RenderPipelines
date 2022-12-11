@@ -42,3 +42,7 @@
 # What is a ``Shader``?
 - A shader is a program that is used to tell the graphics card how to display a certain object or scene. Shaders are responsible for the color, texture, and lighting of a 3D object or scene. They are written in a shading language such as Cg (C for graphics) or HLSL (High Level Shading Language) and are usually processed by the GPU.
 - Shaders are run often on the GPU because they are designed to take advantage of the parallel processing capabilities of the GPU. Shaders can be used to perform a variety of tasks, including transforming and lighting 3D models, calculating reflections, generating shadows, and creating special effects. Some examples of shaders include vertex shaders, pixel shaders, geometry shaders, and compute shaders.
+
+# What is a ``Vertex Buffer``?
+- Vertex buffers are data structures used to store information about the vertices of a 3D model. A vertex buffer stores information like the position, color, and normal vector of each vertex in the model. This information is used by the graphics processing unit (GPU) to render the 3D model on the screen.
+- Vertex buffer objects are used to store large collections of vertices on the graphics card for rendering. This allows the data to be quickly accessed by the GPU, which reduces the amount of time it takes to render a scene. Vertex buffer objects also reduce the amount of data that needs to be sent from the CPU to the GPU, which can improve performance in complex scenes.
