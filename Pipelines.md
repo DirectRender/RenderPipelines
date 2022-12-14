@@ -41,7 +41,16 @@
 
 # What is a ``Shader``?
 - Shaders is a program that is used to tell the graphics card how to display a certain object or scene. Shaders are responsible for the color, texture, and lighting of a 3D object or scene. They are written in a shading language such as Cg (C for graphics) or HLSL (High Level Shading Language) and are usually processed by the GPU.
-- Shaders are run often on the GPU because they are designed to take advantage of the parallel processing capabilities of the GPU. Shaders can be used to perform a variety of tasks, including transforming and lighting 3D models, calculating reflections, generating shadows, and creating special effects. Some examples of shaders include vertex shaders, pixel shaders, geometry shaders, and compute shaders.
+- Shaders are run often on the GPU because they are designed to take advantage of the parallel processing capabilities of the GPU. Shaders can be used to perform a variety of tasks, including transforming and lighting 3D models, calculating reflections, generating shadows, and creating special effects. Some examples of shaders include vertex shaders, fragment/pixel shaders, geometry shaders, and compute shaders.
+
+# What is a ``Vertex Shader``?
+- Simplified: Vertex Shaders determines the position on our screen.
+- A vertex shader is a type of shader program that is executed on the GPU during the rendering of 3D graphics. It is responsible for transforming the position and other attributes of individual vertices, which are the points that define the shape and geometry of a 3D model. This transformation process typically involves multiplying the vertex position by a transformation matrix to move and rotate the model in 3D space. The output of the vertex shader is a set of screen-space coordinates for each vertex, which are then used by the rasterizer to determine which pixels on the screen are covered by the 3D model. Vertex shaders are an important part of the rendering pipeline, and they are often used in conjunction with other types of shaders, such as fragment shaders, to produce the final rendered image.
+
+# What is a ``Fragment/Pixel Shader?``
+- Pixel Shader is what it originaled was called and is now called Fragment shader in modern graphics
+- Simplified: Fragment shaders run for each pixels and determine the color output.
+- A fragment shader is a type of shader program that is executed on the GPU during the rendering of 3D graphics. It is responsible for calculating the color and other attributes of each individual pixel on the screen, based on the inputs provided by the vertex shader and other parts of the rendering pipeline. The output of the fragment shader is a set of color values for each pixel, which are then used to update the framebuffer and produce the final image that is displayed on the screen. Fragment shaders are an important part of the rendering pipeline, and they are often used in conjunction with other types of shaders, such as vertex shaders, to produce the final rendered image.
 
 # What is a ``Vertex Buffer``?
 - Vertex buffers are data structures used to store information about the vertices of a 3D model. A vertex buffer stores information like the position, color, and normal vector of each vertex in the model. This information is used by the graphics processing unit (GPU) to render the 3D model on the screen.
@@ -60,3 +69,6 @@
 # What is a ``Shader Storage Buffer``?
 - A shader storage buffer is a type of buffer in OpenGL that stores data that can be read and written by shaders. This allows shaders to interact with the graphics pipeline in more complex ways and perform more advanced computations on the GPU
 - Shader storage buffers are useful for a variety of applications, such as creating complex particle systems, implementing GPGPU algorithms, or performing physics simulations. They allow you to store and manipulate data on the GPU using shaders, which can be much faster and more efficient than transferring data back and forth between the CPU and GPU.
+
+# What is ``Vertex Attributes``?
+- Vertex attributes are data values that are associated with each vertex in a mesh. These values can be used to define various characteristics of the vertex, such as its position, color, normal vector, and texture coordinates. Vertex attributes are typically stored in a vertex buffer and are used by the graphics pipeline to render the mesh. For example, the position attribute is used to determine the location of each vertex in 3D space, and the color attribute is used to determine the color of each vertex in the final image.
