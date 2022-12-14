@@ -52,6 +52,10 @@
 - Simplified: Fragment shaders run for each pixels and determine the color output.
 - A fragment shader is a type of shader program that is executed on the GPU during the rendering of 3D graphics. It is responsible for calculating the color and other attributes of each individual pixel on the screen, based on the inputs provided by the vertex shader and other parts of the rendering pipeline. The output of the fragment shader is a set of color values for each pixel, which are then used to update the framebuffer and produce the final image that is displayed on the screen. Fragment shaders are an important part of the rendering pipeline, and they are often used in conjunction with other types of shaders, such as vertex shaders, to produce the final rendered image.
 
+<p align="center">
+<img alt="Pipeline" src="https://github.com/DirectRender/RenderPipelines/blob/main/.github/Pipeline.png" width=500 height=300>
+
+
 # What is a ``Vertex Buffer``?
 - Vertex buffers are data structures used to store information about the vertices of a 3D model. A vertex buffer stores information like the position, color, and normal vector of each vertex in the model. This information is used by the graphics processing unit (GPU) to render the 3D model on the screen.
 - Vertex buffer objects are used to store large collections of vertices on the graphics card for rendering. This allows the data to be quickly accessed by the GPU, which reduces the amount of time it takes to render a scene. Vertex buffer objects also reduce the amount of data that needs to be sent from the CPU to the GPU, which can improve performance in complex scenes.
@@ -72,3 +76,6 @@
 
 # What is ``Vertex Attributes``?
 - Vertex attributes are data values that are associated with each vertex in a mesh. These values can be used to define various characteristics of the vertex, such as its position, color, normal vector, and texture coordinates. Vertex attributes are typically stored in a vertex buffer and are used by the graphics pipeline to render the mesh. For example, the position attribute is used to determine the location of each vertex in 3D space, and the color attribute is used to determine the color of each vertex in the final image.
+  
+<p align="center">
+<img alt="Pipeline" src="https://github.com/DirectRender/RenderPipelines/blob/main/.github/VertexAttribute.jpeg" width=600 height=250>
