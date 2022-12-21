@@ -63,6 +63,11 @@
 # What is a ``Index Buffer``?
 - Index buffers store the index data for a mesh, which specifies the order in which the vertices should be drawn. This can be used to reduce the amount of redundant vertex data and improve rendering performance.
 - For example, consider a cube with eight vertices. If you were to draw the cube using a vertex buffer, you would need to specify all eight vertices in the buffer and then draw the cube by drawing two triangles for each face of the cube, for a total of 24 vertices. However, if you were to use an index buffer, you could specify just eight vertices in the vertex buffer and then use the index buffer to specify the order in which those vertices should be drawn, reducing the total number of vertices that need to be drawn.
+<p align="center">
+  In this image we draw two triangles, first triangle is using 102/BAC, second triangle is using 123/BCD
+<img alt="Pipeline" src="https://github.com/DirectRender/RenderPipelines/blob/main/.github/IndexBuffers.png" width=350 height=400>
+  
+  
 
 # What is a ``Texture Buffer``?
 - A texture buffer is a type of buffer in OpenGL that stores texture data. This data is typically stored in an image format, such as PNG or JPEG, and is used to add details and texture to a 3D model.
